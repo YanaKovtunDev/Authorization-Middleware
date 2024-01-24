@@ -6,6 +6,10 @@ module.exports = (scope) => (req, res, next) => {
  
 try {
   const role = req.headers["x-role"];
+  if(!role) {
+    return res.status(403)
+  }
+  
   return res.status()
   next()
 } catch(e) {
