@@ -9,6 +9,6 @@ router
         tasksController.create)
     .get('/:id',
         middleware('tasks.getById'),
-        tasksController.getById);
+        tasksController.getById)
 
 module.exports = router;
