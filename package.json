@@ -6,7 +6,7 @@
     "start": "node bin/www",
     "prestart": "npm install",
     "pretest": "npm install",
-    "test": "./node_modules/.bin/mocha --reporter mocha-multi-reporters --reporter-options configFile=config.json --exit"
+    "test": "mocha --reporter mocha-multi-reporters --reporter-options configFile=config.json --exit --timeout 10000"
   },
   "dependencies": {
     "bluebird": "^3.7.2",

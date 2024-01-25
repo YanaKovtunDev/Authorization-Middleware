@@ -8,6 +8,6 @@ module.exports = {
     },
 
     getById: function (req, res) {
-        res.json({id: 1, name: 'QA Test App'});
+        res.status(200).json({id: 1, name: 'QA Test App'});
     }
 };
